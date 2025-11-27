@@ -22,6 +22,8 @@ project:
   toc:
     - file: intro.md
     - file: how-to-guides.ipynb
+    - file: tutorials.ipynb
+
 site:
   options:
     folders: true
