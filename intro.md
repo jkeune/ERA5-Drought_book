@@ -36,7 +36,7 @@ Read more about ERA5-Drought.
 
 ## Citation
 
-```{note} ✏️ If you use this material, please cite our paper: 
+```{note} ✏️ If you use this material, please cite our paper!
 **Keune, J., Di Giuseppe, F., Barnard, C., Damasio da Costa, E., & Wetterhall, F. (2025). ERA5–Drought: Global drought indices based on ECMWF reanalysis. Scientific Data, 12(1), 616, DOI: 10.1038/s41597-025-04896-y.**
 ```
 

@@ -23,6 +23,7 @@ project:
     - file: intro.md
     - file: how-to-guides.ipynb
     - file: tutorials.ipynb
+    - file: references.md
 
 site:
   options:
