@@ -5,7 +5,7 @@ name: Jupyter Book (via myst) GitHub Pages Deploy
 on:
   push:
     # Runs on pushes targeting the default branch
-    branches: [develop]
+    branches: [jupyter-book-v2]
   # Allow workflow to be dispatched on demand
   workflow_dispatch:
     
