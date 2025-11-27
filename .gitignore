@@ -166,4 +166,7 @@ cython_debug/
 .vscode/
 .ipynb_checkpoints/
 
-_build/
+_build/# pixi environments
+.pixi/*
+pixi*
+!.pixi/config.toml
