@@ -8,7 +8,7 @@
 :link: https://www.nature.com/articles/s41597-025-04896-y
 ERA5-Drought paper 📖  
 ^^^
-Read more in ERA5-Drought paper in _Scientific Data_!
+Read more about ERA5-Drought in our paper!
 ```
 
 ```{grid-item-card}
