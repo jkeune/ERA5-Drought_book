@@ -1,6 +1,6 @@
 version: 1
 project:
-  title: Jupyterbook template
+  title: ERA5-Drought
   authors:
     - name: The Copernicus Climate Change Service (C3S)
     - name: entrusted to ECMWF (European Centre for Medium-Range Weather Forecasts)
@@ -8,7 +8,7 @@ project:
   open_access: true
   exclude:
     - developer/*
-  github: jkeune/era5_drought_book
+  github: jkeune/ERA5-Drought_book
   thebe:
     binder:
       repo: jkeune/era5_drought_book
@@ -20,8 +20,8 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: intro-jupyter-template.md
-    - file: jupyter-notebook-template-copernicus.ipynb
+    - file: intro.md
+    - file: how-to-guides.ipynb
 site:
   options:
     folders: true
