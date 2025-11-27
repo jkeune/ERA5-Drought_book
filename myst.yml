@@ -8,13 +8,13 @@ project:
   open_access: true
   exclude:
     - developer/*
-  github: ecmwf-training/jupyter-template
+  github: jkeune/era5_drought_book
   thebe:
     binder:
-      repo: ecmwf-training/jupyter-template
+      repo: jkeune/era5_drought_book
       provider: github
       url: https://mybinder.org
-      ref: develop
+      ref: jupyter-book-v2
   exports:
     - format: pdf
       template: plain_latex_book
