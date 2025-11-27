@@ -1,23 +1,19 @@
 # ERA5-Drought
 
-This book contains all you need to learn about ERA5-Drought and get started using it. 
-It is structured into 3 topics:
+**ERA5-Drought is a reanalysis-based data set of drought indices that helps us to monitor drought conditions worldwide! 🌍**
 
-
-**[`Xarray`](https://xarray.dev) is a reanalysis-based data set of drought indices that helps us to monitor drought conditions worldwide! 🌍**
-
-📖 On this Jupyter Book website you'll find easy-to-run tutorial notebooks to explore, understand, and plot ERA5-Drought data. Whether you're new to ERA5-Drought or a seasoned user: we hope you'll learn something new and get a head start on your own projects by exploring this material!
+📖 On this Jupyter Book site, you’ll find easy-to-run tutorial notebooks that help you explore, understand, and visualize ERA5-Drought data. Whether you're new to ERA5-Drought or already familiar with it, we hope this material helps you discover something new and jump-start your own projects.
 
 ````{grid}
 :class-container: text-center
 :gutter: 3
 
 ```{grid-item-card}
-:link: tutorial
+:link: tutorials
 :link-type: doc
 Get started! 🚀
 ^^^
-Learn how to navigate the tutorials and run code examples interactively
+A quick dive into ERA5-Drought!
 ```
 
 ```{grid-item-card}
@@ -25,11 +21,19 @@ Learn how to navigate the tutorials and run code examples interactively
 :link-type: doc
 How to...? ➡️
 ^^^
-Got specific questions? Get the answer in our short How-to-Guides! 
+Got specific questions or need detailed instructions? Get the answer in our short How-to-Guides! 
 ```
 
 ```{grid-item-card}
-:link: https://docs.xarray.dev/en/stable/get-help/help-diagram.html#help-flowchart
+:link: references
+:link-type: doc
+References 📚
+^^^
+Read more about ERA5-Drought. 
+```
+
+```{grid-item-card}
+:link: https://www.nature.com/articles/s41597-025-04896-y
 ERA5-Drought paper 📖  
 ^^^
 Read more in ERA5-Drought paper in _Scientific Data_!
@@ -52,7 +56,3 @@ Keune, J., Di Giuseppe, F., Barnard, C., Damasio da Costa, E., & Wetterhall, F. 
 ## Acknowledgements
 
 This website is the result of many contributions from ECMWF employees and our community! We're very grateful for everyone's work. 
-
-
-```{tableofcontents}
-```
