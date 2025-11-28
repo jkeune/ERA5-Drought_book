@@ -20,21 +20,19 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
 
-  toc:
-    entries:
-    - file: intro.md
-      title: ERA5-Drought
-      
-    - title: How-To Guides
-      sections:
-        - file: how-to-guides.ipynb
-        - file: download.ipynb
-
-    - file: tutorials.ipynb
-      title: Tutorials
-
-    - file: references.md
-      title: References
+toc:
+  entries:
+  - root: intro.md
+  - file: intro.md
+    title: ERA5-Drought
+  - title: How-To Guides
+    sections:
+      - file: how-to-guides.ipynb
+      - file: download.ipynb
+  - file: tutorials.ipynb
+    title: Tutorials
+  - file: references.md
+    title: References
 
 
 site:
