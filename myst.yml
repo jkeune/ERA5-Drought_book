@@ -27,7 +27,8 @@ project:
     - file: how-to-guides.ipynb
       title: How-To Guides
       children:
-        - file: download.ipynb
+        - file: how-to-guides/download.ipynb
+        - file: how-to-guides/barren_mask.ipynb
     - file: references.md
       title: References
 
