@@ -21,19 +21,20 @@ project:
       output: exports/book.pdf
 
   toc:
-    root: intro.md
     entries:
-      - file: how-to-guides.ipynb
-        title: How-To Guides
-        sections:
-          - file: download.ipynb
-          - tiele: Download data
-  
-      - file: tutorials.ipynb
-        title: Tutorials
-  
-      - file: references.md
-        title: References
+    - file: intro.md
+      title: ERA5-Drought
+      
+    - title: How-To Guides
+      sections:
+        - file: how-to-guides.ipynb
+        - file: download.ipynb
+
+    - file: tutorials.ipynb
+      title: Tutorials
+
+    - file: references.md
+      title: References
 
 
 site:
