@@ -24,6 +24,8 @@ project:
     - file: intro.md
     - file: tutorials.ipynb
       title: Tutorials
+      children:
+        - file: tutorials/get_started.ipynb
     - file: how-to-guides.ipynb
       title: How-To Guides
       children:
