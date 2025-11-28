@@ -31,6 +31,8 @@ project:
       children:
         - file: how-to-guides/download.ipynb
         - file: how-to-guides/barren_mask.ipynb
+    - file: explanation.md
+      title: Explanation
     - file: references.md
       title: References
 
