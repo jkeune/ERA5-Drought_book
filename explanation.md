@@ -1,12 +1,10 @@
-# Explanations
-
 # Background: Understanding Drought Indices
 
 Drought is a complex phenomenon — it develops slowly, varies across regions, and affects different parts of the water cycle in different ways.  
 Before diving deeper into ERA5-Drought, it helps to understand the **indices** we use to quantify drought and why they matter.
 
-This page gives a short overview of two of the most widely used climate-based drought indicators: **SPI** and **SPEI**.  
-At the end, you’ll find links to authoritative resources such as the **European Drought Observatory (EDO)** and the **Global Drought Observatory (GDO)** for further reading.
+This page gives a short overview of two of the most widely used climate-based drought indicators: **SPI** and **SPEI**, as well as broader drought types (meteorological, agricultural, hydrological).  
+For deeper reading, we link to authoritative sources such as the **World Meteorological Organization (WMO)**, the **European Drought Observatory (EDO)**, and the **Global Drought Observatory (GDO)**.
 
 ---
 
@@ -21,24 +19,23 @@ Drought indices help us:
 - Monitor severity and persistence  
 - Support decision-making in agriculture, water management, and risk assessment  
 
-ERA5-Drought focuses on climate-based indices that rely on long meteorological records.
+ERA5-Drought focuses on climate-based indices that rely on long records of reanalysis data.
 
 ---
 
 ## The Standardized Precipitation Index (SPI)
 
-The **Standardized Precipitation Index (SPI)** is one of the simplest and most widely used drought indicators.
+The **Standardized Precipitation Index (SPI)** (McKee et al., 1993) is one of the simplest and most widely used drought indicators.
 
 **What it measures:**  
-SPI quantifies precipitation anomalies (deficits and surpluses) over a given accumulation period relative to a long-term historical baseline.
+SPI quantifies precipitation anomalies over a chosen accumulation period relative to a long-term climatology.
 
-**Examples of common accumulation periods:**
-- **SPI-1** → last 1 month (short-term meteorological dryness)
-- **SPI-3** → last 3 months (seasonal drought)
-- **SPI-12** → last 12 months (longer-term hydrological impacts)
+Common accumulation periods:
+- **SPI-1** → short-term meteorological dryness  
+- **SPI-3** → seasonal impacts  
+- **SPI-12** → long-term hydrological stress  
 
-**How SPI is interpreted:**  
-Values are standardized, meaning they express *how many standard deviations* the current precipitation level deviates from normal conditions.
+**Interpretation (WMO, 2012):**
 
 | SPI value      | Interpretation        |
 |----------------|------------------------|
@@ -50,10 +47,10 @@ Values are standardized, meaning they express *how many standard deviations* the
 | -1.5–-1.99     | Severely dry           |
 | < -2.0         | Extremely dry          |
 
-**Strengths of SPI**
-- Simple and robust  
+**Strengths**
+- Simple, robust  
 - Requires only precipitation  
-- Flexible across timescales  
+- Comparable across climates  
 
 **Limitations**
 - Does **not** consider temperature or evaporative demand  
@@ -62,62 +59,143 @@ Values are standardized, meaning they express *how many standard deviations* the
 
 ## The Standardized Precipitation–Evapotranspiration Index (SPEI)
 
-The **SPEI** extends SPI by including **temperature-driven evaporative demand**, which is crucial in a warming climate.
+The **SPEI** (Vicente-Serrano et al., 2010) extends SPI by including temperature-driven **evaporative demand**, which is especially relevant under climate warming.
 
 **What it measures:**  
-SPEI is based on the climatic water balance:
+It uses a simple climatic water balance:
 
 > **Water balance = Precipitation – Potential Evapotranspiration (PET)**
 
-Hotter conditions increase PET, meaning land dries faster even if rainfall stays the same. SPEI captures this mechanism, making it useful for understanding drought in warm or rapidly warming regions.
+Hotter conditions increase PET, lowering the water balance even when rainfall is unchanged — SPEI captures this effect.
 
-**Advantages of SPEI**
+**Advantages**
 - Accounts for temperature effects  
-- More sensitive to heat-driven drought intensification  
-- Also available at multiple accumulation periods (SPEI-1, SPEI-3, SPEI-12, …)
+- Sensitive to heat-driven drought intensification  
+- Flexible timescales (1–48 months)
 
 **Limitations**
-- Requires estimating PET, which introduces methodological choices  
-- Slightly more complex to compute than SPI  
+- Requires PET estimation (method-dependent)  
+- Slightly more complex than SPI  
 
 ---
 
 ## How ERA5-Drought uses these indices
 
-ERA5-Drought provides **globally consistent, monthly SPI and SPEI estimates** derived from ERA5 and ERA5T data.  
-All indices are computed relative to a reference climatology (typically 1991–2020), ensuring global comparability.
+ERA5-Drought provides **monthly global SPI and SPEI** derived from ERA5 and ERA5T reanalysis.  
+All indices use a reference climatology (typically 1991–2020), ensuring spatial consistency.
 
 This makes ERA5-Drought suitable for:
-- Global monitoring  
-- Regional risk assessment  
-- Early warning systems  
-- Research and teaching  
+- Global drought monitoring  
+- Sectoral applications  
+- Early-warning systems  
+- Research and education  
 
 ---
 
-## Further reading and authoritative resources
+## Types of drought: meteorological, agricultural, and hydrological
 
-### Drought indices
-- **SPI (WMO guidelines):**  
-  https://library.wmo.int/idurl/4/51520  
-- **SPEI (original methodology papers):**  
-  https://spei.csic.es/
+Drought is not a single concept—it evolves across different parts of the water cycle.  
+Understanding the major drought types helps interpret what SPI and SPEI can (and cannot) capture.
+
+---
+
+### Meteorological drought
+
+**Definition:**  
+A period of significantly below-normal precipitation (Gibbs & Maher, 1967).
+
+**Where it occurs:**  
+In the **atmosphere** — expressed in rainfall anomalies.
+
+**Indicators:**  
+- SPI  
+- SPEI  
+- Percentiles  
+
+**Timescale:** Weeks to months  
+**Significance:** First stage of drought development.
+
+---
+
+### Agricultural (soil moisture) drought
+
+**Definition:**  
+Insufficient soil moisture to meet vegetation or crop needs (FAO, 2013).
+
+**Where it occurs:**  
+**Root zone and surface soils**
+
+**Indicators:**  
+- Soil moisture anomalies  
+- Evaporative Stress Index (ESI)  
+- NDVI/vegetation indices  
+- SPEI (via temperature sensitivity)
+
+**Timescale:** Weeks to months  
+**Impacts:** Crop failures, vegetation stress, fire risk.
+
+---
+
+### Hydrological drought
+
+**Definition:**  
+Long-term deficits in **streamflow, groundwater, lakes, or reservoirs** (Van Loon, 2015).
+
+**Where it occurs:**  
+The **deep water cycle**
+
+**Indicators:**  
+- River discharge  
+- Groundwater levels  
+- Reservoir storage  
+
+**Timescale:** Months to years  
+**Impacts:** Water supply, navigation, hydropower, ecosystems.
+
+---
+
+### How drought types relate
+
+Meteorological drought can trigger agricultural drought, which can eventually trigger hydrological drought — but the pathway is not guaranteed:
+
+- Heatwaves can cause agricultural drought without a rainfall deficit  
+- Irrigation may prevent agricultural drought  
+- Hydrological drought often persists long after rain returns  
+
+**SPI** → Best for meteorological drought  
+**SPEI** → Connects meteorological ↔ agricultural drought  
+**Long timescales (SPI-12, SPEI-12)** → Early signals of hydrological drought  
+
+---
+
+## Further reading and authoritative sources
+
+### Scientific and methodological references
+- WMO (2012). *Standardized Precipitation Index User Guide.*  
+- McKee, T. B., Doesken, N. J., & Kleist, J. (1993). *The relationship of drought frequency and duration to time scales.*  
+- Vicente-Serrano, S. M., Beguería, S., & López-Moreno, J. I. (2010). *A multiscalar drought index sensitive to global warming.*  
 
 ### Operational drought monitoring
-- **Global Drought Observatory (GDO):**  
-  https://edo.jrc.ec.europa.eu/gdo  
-- **European Drought Observatory (EDO):**  
-  https://edo.jrc.ec.europa.eu/  
+- **Global Drought Observatory (GDO)**: https://edo.jrc.ec.europa.eu/gdo  
+- **European Drought Observatory (EDO)**: https://edo.jrc.ec.europa.eu/  
 
-These platforms offer real-time maps, historical context, and additional drought indicators.  
-They are excellent reference points for understanding how climate-based drought monitoring is used operationally around the world.
+These platforms provide real-time maps, long-term records, and multiple drought indicators.
 
 ---
 
 ## Summary
 
-SPI and SPEI are foundational tools for drought monitoring.  
-- **SPI** assesses precipitation anomalies.  
-- **SPEI** extends this with temperature-driven evapotranspiration.  
-Together, they give us a powerful lens to understand changing drought conditions — especially when combined with global, high-resolution datasets such as **ERA5-Drought**.
+SPI and SPEI are core indices for understanding climate-based drought.  
+Knowing the difference between meteorological, agricultural, and hydrological drought provides essential context for interpreting the ERA5-Drought dataset.
+
+---
+
+## References
+
+- FAO (2013). *Agricultural Drought.*  
+- Gibbs, W. J., & Maher, J. V. (1967). *Rainfall deciles as drought indicators.*  
+- McKee, T. B., Doesken, N. J., & Kleist, J. (1993). *The relationship of drought frequency and duration to time scales.*  
+- Van Loon, A. F. (2015). *Hydrological drought explained.*  
+- Vicente-Serrano, S. M., Beguería, S., & López-Moreno, J. I. (2010). *SPEI: A new global drought index.*  
+- WMO (2012). *Standardized Precipitation Index User Guide.*  
 
