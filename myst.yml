@@ -23,6 +23,8 @@ project:
   toc:
     - file: intro.md
     - file: how-to-guides.ipynb
+      sections:
+        - download.ipynb
     - file: tutorials.ipynb
     - file: references.md
 
