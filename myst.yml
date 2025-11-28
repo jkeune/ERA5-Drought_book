@@ -29,6 +29,7 @@ toc:
       title: How-To Guides
       sections:
         - file: download.ipynb
+        - tiele: Download data
 
     - file: tutorials.ipynb
       title: Tutorials
