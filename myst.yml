@@ -20,13 +20,16 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
 
-toc:
-  - file: intro.md
-  - file: tutorials.ipynb
-  - file: how-to-guides.ipynb
-    sections:
-      - file: download.ipynb
-  - file: references.md
+  toc:
+    - file: intro.md
+    - file: tutorials.ipynb
+      title: Tutorials
+    - file: how-to-guides.ipynb
+      title: How-To Guides
+      children:
+        - file: download.ipynb
+    - file: references.md
+      title: References
 
 
 site:
