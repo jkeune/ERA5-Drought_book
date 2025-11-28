@@ -19,13 +19,23 @@ project:
     - format: pdf
       template: plain_latex_book
       output: exports/book.pdf
-  toc:
-    - file: intro.md
+
+toc:
+  format: jb-book
+  root: intro.md
+
+  entries:
     - file: how-to-guides.ipynb
+      title: How-To Guides
       sections:
-      - file: download.ipynb
+        - file: download.ipynb
+
     - file: tutorials.ipynb
+      title: Tutorials
+
     - file: references.md
+      title: References
+
 
 site:
   options:
