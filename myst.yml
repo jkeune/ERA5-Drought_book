@@ -20,22 +20,20 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
 
-toc:
-  format: jb-book
-  root: intro.md
-
-  entries:
-    - file: how-to-guides.ipynb
-      title: How-To Guides
-      sections:
-        - file: download.ipynb
-        - tiele: Download data
-
-    - file: tutorials.ipynb
-      title: Tutorials
-
-    - file: references.md
-      title: References
+  toc:
+    root: intro.md
+    entries:
+      - file: how-to-guides.ipynb
+        title: How-To Guides
+        sections:
+          - file: download.ipynb
+          - tiele: Download data
+  
+      - file: tutorials.ipynb
+        title: Tutorials
+  
+      - file: references.md
+        title: References
 
 
 site:
