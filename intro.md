@@ -9,7 +9,7 @@
 :gutter: 3
 
 ```{grid-item-card}
-:link: tutorials
+:link: tutorials.ipynb
 :link-type: doc
 Get started! 🚀
 ^^^
@@ -17,7 +17,7 @@ A quick dive into ERA5-Drought!
 ```
 
 ```{grid-item-card}
-:link: how-to-guides
+:link: how-to-guides.ipynb
 :link-type: doc
 How to...? ➡️
 ^^^
@@ -25,7 +25,7 @@ Got specific questions or need detailed instructions? Get the answer in our shor
 ```
 
 ```{grid-item-card}
-:link: references
+:link: references.ipynb
 :link-type: doc
 References 📚
 ^^^
