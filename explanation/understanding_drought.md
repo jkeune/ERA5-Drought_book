@@ -1,4 +1,4 @@
-# Background: Understanding Drought (Indices)
+# Understanding Drought (Indices)
 
 Drought is a complex phenomenon — it develops slowly, varies across regions, and affects different parts of the water cycle in different ways.  
 Before diving deeper into ERA5-Drought, it helps to understand the types of drought, and how drought **indices** help to quantify drought and why they matter.
