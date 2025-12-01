@@ -31,8 +31,10 @@ project:
       children:
         - file: how-to-guides/download.ipynb
         - file: how-to-guides/barren_mask.ipynb
-    - file: explanation.md
+    - file: explanation.ipynb
       title: Explanation
+      children:
+        - file: explanation/understanding_drought.md
     - file: references.md
       title: References
 

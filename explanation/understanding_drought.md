@@ -1,10 +1,107 @@
-# Background: Understanding Drought Indices
+# Background: Understanding Drought (Indices)
 
 Drought is a complex phenomenon — it develops slowly, varies across regions, and affects different parts of the water cycle in different ways.  
-Before diving deeper into ERA5-Drought, it helps to understand the **indices** we use to quantify drought and why they matter.
+Before diving deeper into ERA5-Drought, it helps to understand the types of drought, and how drought **indices** help to quantify drought and why they matter.
 
-This page gives a short overview of two of the most widely used climate-based drought indicators: **SPI** and **SPEI**, as well as broader drought types (meteorological, agricultural, hydrological).  
+This page gives a short overview of the broader drought types (meteorological, agricultural, hydrological) and then focuses on two of the most widely used climate-based drought indicators: **SPI** and **SPEI**.  
+
 For deeper reading, we link to authoritative sources such as the **World Meteorological Organization (WMO)**, the **European Drought Observatory (EDO)**, and the **Global Drought Observatory (GDO)**.
+
+---
+
+## Types of drought: meteorological, agricultural, and hydrological
+
+Drought is not a single concept, as drought moves across different parts of the water cycle.  
+Understanding the major drought types helps interpret what drought indices can (and cannot) capture.
+
+---
+
+### Meteorological drought
+
+**Definition:**  
+A period of significantly below-normal precipitation (Gibbs & Maher, 1967).
+
+**Where it occurs:**  
+In the **atmosphere** — expressed in rainfall anomalies.
+
+**Indicators:**  
+- Percentiles  
+- Standardized Precipitation Index (SPI)
+- Standardized Precipitation Evapotranspiration Index (SPEI)
+
+**Timescale:** Weeks to months  
+**Significance:** First stage of drought development.
+
+---
+
+### Agricultural (soil moisture) drought
+
+**Definition:**  
+Insufficient soil moisture to meet vegetation or crop needs (FAO, 2013).
+
+**Where it occurs:**  
+**Root zone and surface soils**
+
+**Indicators:**  
+- Soil moisture anomalies  
+- Evaporative Stress Index (ESI)  
+- NDVI/vegetation indices  
+- SPEI (via temperature sensitivity)
+
+**Timescale:** Weeks to months  
+**Impacts:** Crop failures, vegetation stress, fire risk.
+
+---
+
+### Hydrological drought
+
+**Definition:**  
+Long-term deficits in **streamflow, groundwater, lakes, or reservoirs** (Van Loon, 2015).
+
+**Where it occurs:**  
+The **deep water cycle**
+
+**Indicators:**  
+- River discharge  
+- Groundwater levels  
+- Reservoir storage  
+
+**Timescale:** Months to years  
+**Impacts:** Water supply, navigation, hydropower, ecosystems.
+
+---
+
+### How drought types relate
+
+Meteorological drought is often the **starting point** of drought development, and many drought events progress from **meteorological → agricultural → hydrological** stages. However, this sequence is **not guaranteed**, and real-world drought propagation is more complex:
+
+- **Heatwaves** can trigger agricultural drought even when rainfall is near normal  
+- **Irrigation** or groundwater pumping can temporarily buffer agricultural drought  
+- **Hydrological drought** can persist long after rainfall recovers  
+- **Soil characteristics, land use, and snowpack dynamics** can accelerate or delay the transition  
+
+Because of this complexity, the **timescale** over which precipitation deficits accumulate becomes a key factor. Longer deficits generally translate into deeper and more persistent impacts across the water cycle.
+
+A simplified view:
+
+- **Short-term deficits (1 month / SPI-1 or SPEI-1)**  
+  → Reduced soil moisture, stress on vegetation, and lower flow in small streams  
+
+- **Seasonal deficits (3–6 months / SPI-3 to SPI-6, SPEI-3 to SPEI-6)**  
+  → Lower river discharge, reduced reservoir storage, early signs of water scarcity  
+
+- **Long-term deficits (6–12+ months / SPI-6 to SPI-12, SPEI-6 to SPEI-12)**  
+  → Reduced groundwater recharge, declining aquifer levels, long-lasting hydrological drought  
+
+In practice:
+
+- **SPI** remains one of the most robust indicators of **meteorological drought**, as it responds directly to precipitation anomalies.  
+- **SPEI** links **meteorological and agricultural drought**, capturing temperature-driven evaporative demand and heat-related intensification.  
+- **Long-term SPI and SPEI (e.g., 12-month)** are often used as early indicators of a **developing hydrological drought**, reflecting sustained deficits across seasons.
+
+Together, these indices provide complementary insights into how drought emerges, evolves, and impacts different components of the water cycle.
+
+---
 
 ---
 
@@ -19,7 +116,7 @@ Drought indices help us:
 - Monitor severity and persistence  
 - Support decision-making in agriculture, water management, and risk assessment  
 
-ERA5-Drought focuses on climate-based indices that rely on long records of reanalysis data.
+ERA5-Drought focuses on climate-based indices that rely on long records of reanalysis data (ERA5).
 
 ---
 
@@ -82,89 +179,13 @@ Hotter conditions increase PET, lowering the water balance even when rainfall is
 ## How ERA5-Drought uses these indices
 
 ERA5-Drought provides **monthly global SPI and SPEI** derived from ERA5 and ERA5T reanalysis.  
-All indices use a reference climatology (typically 1991–2020), ensuring spatial consistency.
+All indices use a reference climatology (1991–2020, the reference period curently suggested by the World Meteorological Organisation), ensuring spatial consistency.
 
 This makes ERA5-Drought suitable for:
 - Global drought monitoring  
 - Sectoral applications  
 - Early-warning systems  
 - Research and education  
-
----
-
-## Types of drought: meteorological, agricultural, and hydrological
-
-Drought is not a single concept—it evolves across different parts of the water cycle.  
-Understanding the major drought types helps interpret what SPI and SPEI can (and cannot) capture.
-
----
-
-### Meteorological drought
-
-**Definition:**  
-A period of significantly below-normal precipitation (Gibbs & Maher, 1967).
-
-**Where it occurs:**  
-In the **atmosphere** — expressed in rainfall anomalies.
-
-**Indicators:**  
-- SPI  
-- SPEI  
-- Percentiles  
-
-**Timescale:** Weeks to months  
-**Significance:** First stage of drought development.
-
----
-
-### Agricultural (soil moisture) drought
-
-**Definition:**  
-Insufficient soil moisture to meet vegetation or crop needs (FAO, 2013).
-
-**Where it occurs:**  
-**Root zone and surface soils**
-
-**Indicators:**  
-- Soil moisture anomalies  
-- Evaporative Stress Index (ESI)  
-- NDVI/vegetation indices  
-- SPEI (via temperature sensitivity)
-
-**Timescale:** Weeks to months  
-**Impacts:** Crop failures, vegetation stress, fire risk.
-
----
-
-### Hydrological drought
-
-**Definition:**  
-Long-term deficits in **streamflow, groundwater, lakes, or reservoirs** (Van Loon, 2015).
-
-**Where it occurs:**  
-The **deep water cycle**
-
-**Indicators:**  
-- River discharge  
-- Groundwater levels  
-- Reservoir storage  
-
-**Timescale:** Months to years  
-**Impacts:** Water supply, navigation, hydropower, ecosystems.
-
----
-
-### How drought types relate
-
-Meteorological drought can trigger agricultural drought, which can eventually trigger hydrological drought — but the pathway is not guaranteed:
-
-- Heatwaves can cause agricultural drought without a rainfall deficit  
-- Irrigation may prevent agricultural drought  
-- Hydrological drought often persists long after rain returns  
-
-**SPI** → Best for meteorological drought  
-**SPEI** → Connects meteorological ↔ agricultural drought  
-**Long timescales (SPI-12, SPEI-12)** → Early signals of hydrological drought  
 
 ---
 
@@ -183,11 +204,10 @@ These platforms provide real-time maps, long-term records, and multiple drought 
 
 ---
 
-## Summary
-
-SPI and SPEI are core indices for understanding climate-based drought.  
+```{admonition} Summary
+SPI and SPEI are core indices for understanding meteorological drought.  
 Knowing the difference between meteorological, agricultural, and hydrological drought provides essential context for interpreting the ERA5-Drought dataset.
-
+```
 ---
 
 ## References
