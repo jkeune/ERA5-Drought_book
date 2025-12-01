@@ -1,4 +1,4 @@
-# References
+# About ERA5-Drought
 
 ````{grid}
 :class-container: text-center
