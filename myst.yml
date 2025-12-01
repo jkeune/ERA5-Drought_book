@@ -37,6 +37,8 @@ project:
         - file: explanation/understanding_drought.md
     - file: references.md
       title: References
+      children:
+        - about.md
 
 
 site:
