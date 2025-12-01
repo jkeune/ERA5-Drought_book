@@ -35,7 +35,7 @@ project:
       title: Explanation
       children:
         - file: explanation/understanding_drought.md
-    - file: references.md
+    - file: references.ipynb
       title: References
       children:
         - file: references/about.md
