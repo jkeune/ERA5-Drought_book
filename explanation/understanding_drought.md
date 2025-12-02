@@ -14,7 +14,7 @@ For deeper reading, we link to authoritative sources such as the **World Meteoro
 Drought is not a single concept, as drought moves across different parts of the water cycle.  
 Understanding the major drought types helps interpret what drought indices can (and cannot) capture.
 
-![Image](img/drought_types.png "Types of drought")
+![Image](../img/drought_types.png "Types of drought")
 
 ---
 
